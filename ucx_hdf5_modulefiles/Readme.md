@@ -3,6 +3,8 @@
 Steps to reproduce ( currently on ln04, but I expect the same issue on the compute nodes ) : 
 
 ```bash
+module load PrgEnv-gnu
+module load cray-hdf5-parallel
 module load craype-network-ucx 
 module load cray-mpich-ucx 
 ```
