@@ -1,0 +1,63 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+
+Lmod is automatically replacing "craype-network-ofi" with "craype-network-ucx".
+
+
+Inactive Modules:
+  1) cray-mpich
+
+rm: cannot remove 'WAVECAR': No such file or directory
+ running  128 mpi-ranks, with    1 threads/rank, on    2 nodes
+ distrk:  each k-point on  128 cores,    1 groups
+ distr:  one band on   64 cores,    2 groups
+ vasp.6.5.0 16Dec24 (build Jan 20 2025 08:45:31) gamma-only                      
+ POSCAR found :  2 types and    1080 ions
+ Reading from existing POTCAR
+ scaLAPACK will be used
+ Reading from existing POTCAR
+ LDA part: xc-table for (Slater(with rela. corr.)+CA(PZ)), standard interpolation
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1     0.139343593598E+06    0.13934E+06   -0.58734E+06  5184   0.220E+03
+RMM:   2     0.103123034255E+05   -0.12903E+06   -0.21089E+06  5184   0.606E+02
+RMM:   3     0.296844558034E+05    0.19372E+05   -0.46747E+05  5184   0.369E+02
+RMM:   4     0.190413995921E+05   -0.10643E+05   -0.15350E+05  5184   0.390E+02
+RMM:   5     0.104948636802E+05   -0.85465E+04   -0.78300E+04  5184   0.226E+02
+RMM:   6     0.462667323932E+04   -0.58682E+04   -0.47051E+04  5184   0.200E+02
+RMM:   7     0.522448119038E+03   -0.41042E+04   -0.38053E+04  5184   0.150E+02
+RMM:   8    -0.248306426823E+04   -0.30055E+04   -0.27752E+04  5184   0.147E+02
+RMM:   9    -0.534960272942E+04   -0.28665E+04   -0.27575E+04 19689   0.116E+02
+RMM:  10    -0.309303010970E+04    0.22566E+04   -0.30390E+02 20561   0.551E+01
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The electronic self-consistency was not achieved in the given           |
+|     number of steps (NELM). The forces and other quantities evaluated       |
+|     might not be reliable so examine the results carefully. If you find     |
+|     spurious results, we suggest increasing NELM, if you were close to      |
+|     convergence or switching to a different ALGO or adjusting the           |
+|     density mixing parameters otherwise.                                    |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+   1 F= -.30930301E+04 E0= -.30917181E+04  d E =-.262398E+01
