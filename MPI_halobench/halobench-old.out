@@ -1,0 +1,56 @@
+ 
+ Simple haloswap benchmark
+ -------------------------
+ 
+ Running on  128  process(es)
+ Process grid is ( 8 ,  4 ,  4 )
+ Each halo contains 10000  doubles
+ 
+ Total amount of halo data =  0.457763671875  MiB per process
+ 
+ Number of repetitions =  1000
+ Clock resolution is  4.44444444444444412E-4  microseconds
+ 
+ Sendrecv
+ --------
+ Secs =  7.46616403933254014E-2 , bwidth =  6131.1761898540226  MiB/s
+ 
+ 
+ Redblack
+ --------
+ Secs =  6.19957200340220255E-2 , bwidth =  7383.7947462145503  MiB/s
+ 
+ 
+ Isend / Recv / Wait
+ -------------------
+ Secs =  5.54805804499778274E-2 , bwidth =  8250.8810859995774  MiB/s
+ 
+ 
+ Irecv / Send / Wait
+ -------------------
+ Secs =  5.75347398548957598E-2 , bwidth =  7956.3003679080311  MiB/s
+ 
+ 
+ Irecv / Isend / Wait (pairwise)
+ -------------------------------
+ Secs =  5.63998100622519413E-2 , bwidth =  8116.4044944431207  MiB/s
+ 
+ 
+ Irecv / Isend / Waitall
+ -----------------------
+ Secs =  3.76586497341057508E-2 , bwidth =  12155.605023204642  MiB/s
+ 
+ 
+ Persistent / Startall / Waitall
+ -------------------------------
+ Secs =  6.54714400219276182E-2 , bwidth =  6991.8069882331338  MiB/s
+ 
+ 
+ Neighbourhood Collective
+ ------------------------
+ Secs =  3.51716710408953026E-2 , bwidth =  13015.124340914668  MiB/s
+ 
+ 
+ Finished
+ --------
+ 
