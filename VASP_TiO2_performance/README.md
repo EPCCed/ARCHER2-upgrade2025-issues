@@ -22,8 +22,8 @@ collective calls (MPI_Allreduce, MPI_Alltoallv, MPI_Alltoall).
 Four job submission scripts are provided along with the required input files for
 the VASP benchmark (all jobs are on 2 nodes):
 
-- submit-UCX-Original.slurm : Run using UCX on un-upgraded nodes
-- submit-UCX-Upgraded.slurm : Run using UCX on upgraded nodes
+- [submit-UCX-Original.slurm](submit-UCX-Original.slurm) : Run using UCX on un-upgraded nodes
+- [submit-UCX-Upgraded.slurm](submit-UCX-Upgraded.slurm) : Run using UCX on upgraded nodes
 
 Input files:
 - input/INCAR.base
@@ -42,7 +42,7 @@ the `Elapsed time`, e.g.:
 
 ## Sample output
 
-- Un-upgraded nodes: TiO2MCC_UCX-Original_2nodes_128cores_1threads_64NCORE_9631915_202505191412.OUTCAR
-- Upgraded nodes: TiO2MCC_UCX-Upgraded_2nodes_128cores_1threads_64NCORE_9631918_202505191412.OUTCAR
+- Un-upgraded nodes: [TiO2MCC_UCX-Original_2nodes_128cores_1threads_64NCORE_9631915_202505191412.OUTCAR](TiO2MCC_UCX-Original_2nodes_128cores_1threads_64NCORE_9631915_202505191412.OUTCAR)
+- Upgraded nodes: [TiO2MCC_UCX-Upgraded_2nodes_128cores_1threads_64NCORE_9631918_202505191412.OUTCAR](TiO2MCC_UCX-Upgraded_2nodes_128cores_1threads_64NCORE_9631918_202505191412.OUTCAR)
 
 
