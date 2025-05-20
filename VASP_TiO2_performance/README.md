@@ -1,5 +1,7 @@
 # VASP TiO2 benchmark: UCX performance issues 
 
+Observed on both TDS and main system.
+
 ## Symptom
 
 When UCX transport layer is used, VASP performance for the TiO2 benchmark case
