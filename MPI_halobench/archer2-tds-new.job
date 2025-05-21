@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Slurm job options (name, compute nodes, job time)
+#SBATCH --job-name=halobench
+#SBATCH --time=00:20:00
+#SBATCH --output=%x-%j.out
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=128
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=standard
+
+#This is for compiling and running on standard ARCHER2 nodes
+
+##SBATCH --qos=short
+
+#This is for compiling and running on upgrade (using ln04)
+
+#SBATCH --qos=reservation
+#SBATCH --account=z19
+# -upgrade2025
+#SBATCH --reservation=iscsi_testing
+
+export OMP_NUM_THREADS=1
+export SRUN_CPUS_PER_TASK=$SLURM_CPUS_PER_TASK
+
+srun --unbuffered --distribution=block:block --hint=nomultithread ./halobench
