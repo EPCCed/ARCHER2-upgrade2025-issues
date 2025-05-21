@@ -145,4 +145,123 @@ Run using the relevant archer2.job script:
     archer2-old.job for the current production image.
     archer2-new.job for the image in the test partition.
 
+## TDS results
 
+
+### Reference image
+
+```
+ Simple haloswap benchmark
+ -------------------------
+
+ Running on  128  process(es)
+ Process grid is ( 8 ,  4 ,  4 )
+ Each halo contains 10000  doubles
+
+ Total amount of halo data =  0.457763671875  MiB per process
+
+ Number of repetitions =  1000
+ Clock resolution is  4.44247790755736597E-4  microseconds
+
+ Sendrecv
+ --------
+ Secs =  7.64285671654856835E-2 , bwidth =  5989.431554877051  MiB/s
+
+
+ Redblack
+ --------
+ Secs =  6.25789976430313477E-2 , bwidth =  7314.9729001128462  MiB/s
+
+
+ Isend / Recv / Wait
+ -------------------
+ Secs =  5.57185151678142448E-2 , bwidth =  8215.6473570104536  MiB/s
+
+
+ Irecv / Send / Wait
+ -------------------
+ Secs =  5.86608631514403331E-2 , bwidth =  7803.5618175822956  MiB/s
+
+
+ Irecv / Isend / Wait (pairwise)
+ -------------------------------
+ Secs =  5.89816398453432839E-2 , bwidth =  7761.1214790790755  MiB/s
+
+
+ Irecv / Isend / Waitall
+ -----------------------
+ Secs =  3.80589729027093551E-2 , bwidth =  12027.746335803313  MiB/s
+
+
+ Persistent / Startall / Waitall
+ -------------------------------
+ Secs =  6.53827283616268407E-2 , bwidth =  7001.2935119982203  MiB/s
+
+
+ Neighbourhood Collective
+ ------------------------
+ Secs =  3.46395260522457879E-2 , bwidth =  13215.067411273711  MiB/s
+
+
+ Finished
+ --------
+```
+
+### New image
+
+```
+ Simple haloswap benchmark
+ -------------------------
+
+ Running on  128  process(es)
+ Process grid is ( 8 ,  4 ,  4 )
+ Each halo contains 10000  doubles
+
+ Total amount of halo data =  0.457763671875  MiB per process
+
+ Number of repetitions =  1000
+ Clock resolution is  4.44257856144863593E-4  microseconds
+
+ Sendrecv
+ --------
+ Secs =  0.13745590874567329 , bwidth =  3330.2582337291415  MiB/s
+
+
+ Redblack
+ --------
+ Secs =  6.50395633203399298E-2 , bwidth =  7038.23409176923  MiB/s
+
+
+ Isend / Recv / Wait
+ -------------------
+ Secs =  9.06315647650792339E-2 , bwidth =  5050.8194695914426  MiB/s
+
+
+ Irecv / Send / Wait
+ -------------------
+ Secs =  5.86283959690923825E-2 , bwidth =  7807.8832672878016  MiB/s
+
+
+ Irecv / Isend / Wait (pairwise)
+ -------------------------------
+ Secs =  0.10864806798490992 , bwidth =  4213.2702436878917  MiB/s
+
+
+ Irecv / Isend / Waitall
+ -----------------------
+ Secs =  3.76246675880860942E-2 , bwidth =  12166.583819067455  MiB/s
+
+
+ Persistent / Startall / Waitall
+ -------------------------------
+ Secs =  1.087252873999875 , bwidth =  421.02778739130065  MiB/s
+
+
+ Neighbourhood Collective
+ ------------------------
+ Secs =  3.74737109752379255E-2 , bwidth =  12215.594878699991  MiB/s
+
+
+ Finished
+ --------
+```
