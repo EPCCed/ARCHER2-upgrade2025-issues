@@ -1,5 +1,9 @@
 # Halobenchmark
 
+## Note
+
+No output to stderr seen when running these benchmarks and all output to stdout provided below.
+
 ## Symptoms
 
 When the new image is used in 128 process single node testing the performance of the MPI benchmark is significantly worse.
