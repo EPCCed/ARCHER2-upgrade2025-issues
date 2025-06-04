@@ -38,3 +38,6 @@ WARNING: PerfTools is saving object files from a temporary directory into direct
 The executable can be instrumented with `pat_build` and when run the expected output is produced and can be processed by `pat_report`.
 
 The linker warnings are not seen if compiling on a login node that has the original image.
+
+
+Existing source files can be found in `/work/z19/shared/2025-05_upgrade-test/ln04/CrayPAT/single-node-optimisation-course/Exercises/Archer2Opt/VH1/src`.
